@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <!-- Nom -->
+    <TextView
+        android:id="@+id/r_salle_musculation_txv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name" />
+
+    <!-- Commune -->
+    <TextView
+        android:id="@+id/r_salle_musculation_txv_comName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_salle_musculation_txv_name"
+        tools:text="ComName" />
+
+    <!-- Date de création -->
+    <TextView
+        android:id="@+id/r_salle_musculation_txv_dateCreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@+id/r_salle_musculation_txv_name"
+        app:layout_constraintTop_toBottomOf="@+id/r_salle_musculation_txv_comName"
+        tools:text="22/10/1678" />
+
+    <!-- ID -->
+    <TextView
+        android:id="@+id/r_salle_musculation_txv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_salle_musculation_txv_comName"
+        tools:text="ID54394530" />
+
+    <!-- Étoile pour favoris -->
+    <ImageView
+        android:id="@+id/r_salle_musculation_star"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Favoris"
+        android:src="@drawable/ic_star"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
